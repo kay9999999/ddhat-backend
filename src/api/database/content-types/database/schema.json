@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "databases",
+  "info": {
+    "singularName": "database",
+    "pluralName": "databases",
+    "displayName": "Database",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionheading": {
+      "type": "string"
+    },
+    "sectionimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardheading": {
+      "type": "string"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "sectionpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    }
+  }
+}

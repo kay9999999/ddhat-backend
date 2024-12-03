@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_uses",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "Contact-us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bannertitle": {
+      "type": "string"
+    },
+    "bannerdescription": {
+      "type": "text"
+    },
+    "mainheading": {
+      "type": "string"
+    },
+    "formheading": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "infoheading": {
+      "type": "string"
+    },
+    "location": {
+      "type": "text"
+    },
+    "info": {
+      "type": "text"
+    },
+    "mapEmbedLink": {
+      "type": "text"
+    },
+    "number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

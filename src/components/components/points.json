@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_points",
+  "info": {
+    "displayName": "Points",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "text"
+    }
+  }
+}

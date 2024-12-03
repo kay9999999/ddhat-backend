@@ -11,21 +11,26 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.0.2",
-    "@strapi/plugin-users-permissions": "5.0.2",
-    "@strapi/strapi": "5.0.2",
-    "pg": "8.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.0.0",
-    "styled-components": "^6.0.0"
+    "@strapi/design-system": "^2.0.0-rc.12",
+    "@strapi/helper-plugin": "^4.25.12",
+    "@strapi/icons": "^2.0.0-rc.12",
+    "@strapi/plugin-cloud": "^5.3.0",
+    "@strapi/plugin-users-permissions": "^5.3.0",
+    "@strapi/strapi": "^5.3.0",
+    "pg": "8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "styled-components": "^6.1.13"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
   "strapi": {
     "uuid": "11991b84-7cf2-4784-986d-5feadf7ff423"
-  }
+  },
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

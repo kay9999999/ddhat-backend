@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "php_devs",
+  "info": {
+    "singularName": "php-dev",
+    "pluralName": "php-devs",
+    "displayName": "PHP-Dev"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectionheading": {
+      "type": "string"
+    },
+    "sectionimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectionpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "mainheading": {
+      "type": "string"
+    },
+    "mainpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "heading1": {
+      "type": "string"
+    },
+    "image1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "points1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    }
+  }
+}

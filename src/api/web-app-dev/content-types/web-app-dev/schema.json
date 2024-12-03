@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "web_app_devs",
+  "info": {
+    "singularName": "web-app-dev",
+    "pluralName": "web-app-devs",
+    "displayName": "Web-App-Dev",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionheading": {
+      "type": "string"
+    },
+    "sectionimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heading1": {
+      "type": "string"
+    },
+    "subhead1": {
+      "type": "text"
+    },
+    "subsubhead1": {
+      "type": "string"
+    },
+    "card1": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "subsubhead2": {
+      "type": "string"
+    },
+    "card2": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "subhead2": {
+      "type": "text"
+    },
+    "card3": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "heading3": {
+      "type": "string"
+    },
+    "points": {
+      "displayName": "Points",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "sectionpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    }
+  }
+}

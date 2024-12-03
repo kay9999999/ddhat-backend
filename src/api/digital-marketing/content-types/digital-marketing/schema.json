@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "digital_marketings",
+  "info": {
+    "singularName": "digital-marketing",
+    "pluralName": "digital-marketings",
+    "displayName": "Digital-Marketing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectionheading": {
+      "type": "string"
+    },
+    "sectionimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sectionpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "mainheading": {
+      "type": "string"
+    },
+    "mainpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "cardheading": {
+      "type": "string"
+    },
+    "cardsubheading": {
+      "type": "text"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    }
+  }
+}

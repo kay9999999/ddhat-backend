@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "e_commerces",
+  "info": {
+    "singularName": "e-commerce",
+    "pluralName": "e-commerces",
+    "displayName": "E-commerce",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "bannerimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sectionheading": {
+      "type": "string"
+    },
+    "sectionimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mainheading": {
+      "type": "string"
+    },
+    "mainimg": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cardheading": {
+      "type": "string"
+    },
+    "card": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "sectionpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    },
+    "mainpoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.points"
+    }
+  }
+}

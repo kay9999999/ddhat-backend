@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_positions",
+  "info": {
+    "singularName": "job-position",
+    "pluralName": "job-positions",
+    "displayName": "Job-Position",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "info": {
+      "type": "blocks"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "heading1": {
+      "type": "string"
+    },
+    "jobtitle": {
+      "type": "string"
+    },
+    "jobdescription": {
+      "type": "text"
+    },
+    "heading2": {
+      "type": "string"
+    },
+    "noofpositions": {
+      "type": "string"
+    },
+    "heading3": {
+      "type": "string"
+    },
+    "job_applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-application.job-application",
+      "mappedBy": "job_position"
+    }
+  }
+}
