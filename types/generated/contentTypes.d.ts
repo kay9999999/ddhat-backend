@@ -749,10 +749,6 @@ export interface ApiJobApplicationJobApplication
       Schema.Attribute.Private;
     cv: Schema.Attribute.Media<'files'>;
     email: Schema.Attribute.String;
-    job_position: Schema.Attribute.Relation<
-      'manyToOne',
-      'api::job-position.job-position'
-    >;
     job_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -788,10 +784,6 @@ export interface ApiJobPositionJobPosition extends Struct.CollectionTypeSchema {
     heading2: Schema.Attribute.String;
     heading3: Schema.Attribute.String;
     info: Schema.Attribute.Blocks;
-    job_applications: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::job-application.job-application'
-    >;
     jobdescription: Schema.Attribute.Text;
     jobtitle: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

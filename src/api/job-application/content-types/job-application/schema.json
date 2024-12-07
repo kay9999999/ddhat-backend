@@ -29,12 +29,6 @@
         "files"
       ]
     },
-    "job_position": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::job-position.job-position",
-      "inversedBy": "job_applications"
-    },
     "job_title": {
       "type": "string"
     }
