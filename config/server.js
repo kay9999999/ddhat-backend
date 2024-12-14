@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
   url: env("URL", "https://your-production-url.com"), // Replace with your production URL or use an environment variable
 
   app: {
-    keys: env.array("APP_KEYS", ["default-app-key-1", "default-app-key-2"]), // Secure the app keys, use env for production
+    keys: env.array("APP_KEYS"), // Secure the app keys, use env for production
   },
 
   webhooks: {
