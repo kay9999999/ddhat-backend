@@ -1,0 +1,56 @@
+name: CI/CD for Strapi and Next.js
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.16.0' # Compatible with your version range
+          
+
+      # Step 3: Deploy to DigitalOcean Droplet
+      - name: Deploy to DigitalOcean
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.DROPLET_IP }}
+          username: ${{ secrets.DROPLET_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            echo "Starting deployment..."
+
+            # Deploy and Build Strapi Backend
+            echo "Deploying Strapi Backend..."
+            cd /var/www/ddhat-backend
+            git pull origin main
+            sudo npm install --legacy-peer-deps
+            sudo NODE_OPTIONS="--max_old_space_size=4096" NODE_ENV=production npm run build
+            pm2 restart strapi
+            echo "Strapi Backend deployed and started successfully."
+
+            # Wait for Strapi Backend to be fully up
+            echo "Waiting for Strapi backend to initialize..."
+            sleep 45  # Adjust this based on your Strapi app's startup time
+
+            # Deploy and Build Next.js Frontend
+            echo "Deploying Next.js Frontend..."
+            cd /var/www/ddhat-frontend
+            git pull origin main
+            sudo npm install
+            sudo NODE_ENV=production npm run build
+            pm2 restart next
+            echo "Next.js Frontend deployed successfully."
+
+            echo "Deployment completed!"
