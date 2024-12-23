@@ -1,7 +1,11 @@
-const path = require("path");
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env.production')});
 
 module.exports = ({ env }) => {
   const client = env("DATABASE_CLIENT", "postgres");
+
+console.log('Database User:', process.env.DATABASE_USERNAME);
+  console.log('Database Name:', process.env.DATABASE_NAME);
 
   const connections = {
     mysql: {

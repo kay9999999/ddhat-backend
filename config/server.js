@@ -1,9 +1,9 @@
 module.exports = ({ env }) => ({
-  host: env("HOST", "0.0.0.0"), // Allow Strapi to listen on all interfaces
+  host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337), // Default port for Strapi
 
   // Specify the public URL of your deployed application
-  url: env("URL", "https://your-production-url.com"), // Replace with your production URL or use an environment variable
+  url: env("URL", "https://admin.ddhat.com"), // Replace with your production URL or use an environment variable
 
   app: {
     keys: env.array("APP_KEYS"), // Secure the app keys, use env for production
